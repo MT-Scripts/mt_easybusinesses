@@ -1,0 +1,10 @@
+{
+    "target_management": "Open management",
+    "target_stash": "Open stash",
+    "target_craft": "Open craft",
+    "target_shop": "Open shop",
+    "target_tray": "Open tray",
+    "target_showcase": "Open showcase",
+    "target_duty_on": "Enter duty",
+    "target_duty_off": "Exit duty"
+}
