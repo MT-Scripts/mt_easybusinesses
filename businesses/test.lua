@@ -14,7 +14,7 @@ Businesses[#Businesses + 1] = {
         display = 4,
         scale = 0.8,
         label = "Pawn shop"
-    }
+    },
 
     managements = { -- The business management locations
         { coords = vec3(432.85, -773.6, 29.4), radius = 0.45 },
