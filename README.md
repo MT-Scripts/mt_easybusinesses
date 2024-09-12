@@ -9,6 +9,7 @@ Just simple multi businesses script for QBox
 - Crafts that can be locked to certain grade
 - Tray with showcases to only show items without the possiblity to remove it without certain job and grade
 - Shops that can be locked to certain grade
+- Map blips
 
 # Dependicies
 - qbx_core
