@@ -7,7 +7,7 @@ Businesses[#Businesses + 1] = {
     job = 'realestate', -- The business job
     debug = true, -- Zones debug
 
-    blip = {
+    blip = { -- Business map blip
         coords = vec3(428.45, -775.05, 29.1),
         sprite = 58,
         color = 5,
