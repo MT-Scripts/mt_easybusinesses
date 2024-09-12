@@ -7,6 +7,15 @@ Businesses[#Businesses + 1] = {
     job = 'realestate', -- The business job
     debug = true, -- Zones debug
 
+    blip = {
+        coords = vec3(428.45, -775.05, 29.1),
+        sprite = 58,
+        color = 5,
+        display = 4,
+        scale = 0.8,
+        label = "Pawn shop"
+    }
+
     managements = { -- The business management locations
         { coords = vec3(432.85, -773.6, 29.4), radius = 0.45 },
     },

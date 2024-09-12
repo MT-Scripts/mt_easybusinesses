@@ -2,6 +2,18 @@ lib.locale()
 
 CreateThread(function()
     for bk, bv in pairs(Businesses) do
+        if bv.blip then
+            local blip = AddBlipForCoord(bv.blip.coords.x, bv.blip.coords.y, bv.blip.coords.z)
+            SetBlipSprite(blip, bv.blip.sprite)
+            SetBlipDisplay(blip, bv.blip.display)
+            SetBlipAsShortRange(blip, true)
+            SetBlipScale(blip, bv.blip.scale)
+            SetBlipColour(blip, bv.blip.color)
+            BeginTextCommandSetBlipName("STRING")
+            AddTextComponentSubstringPlayerName(bv.blip.label)
+            EndTextCommandSetBlipName(blip)
+        end
+
         if bv.managements then
             for mk, mv in pairs(bv.managements) do
                 exports.ox_target:addSphereZone({
