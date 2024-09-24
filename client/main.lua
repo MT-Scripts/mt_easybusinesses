@@ -28,7 +28,7 @@ CreateThread(function()
                                 exports.qbx_management:OpenBossMenu('job')
                             end,
                             canInteract = function()
-                                return QBX.PlayerData.job.isboss
+                                return (QBX.PlayerData.job.name == bv.job and QBX.PlayerData.job.isboss)
                             end
                         }
                     }
@@ -54,7 +54,7 @@ CreateThread(function()
                                 end
                             end,
                             canInteract = function()
-                                return (QBX.PlayerData.job.grade.level >= sv.minGrade)
+                                return (QBX.PlayerData.job.name == bv.job and QBX.PlayerData.job.grade.level >= sv.minGrade)
                             end
                         }
                     }
@@ -78,7 +78,7 @@ CreateThread(function()
                                 end, "businesses_craft_"..bv.job.."_"..ck, cv.items, cv.label)
                             end,
                             canInteract = function()
-                                return (QBX.PlayerData.job.grade.level >= cv.minGrade)
+                                return (QBX.PlayerData.job.name == bv.job and QBX.PlayerData.job.grade.level >= cv.minGrade)
                             end
                         }
                     }
@@ -102,7 +102,7 @@ CreateThread(function()
                                 end, "businesses_stash_"..bv.job.."_"..sk, sv.label, sv.inventory)
                             end,
                             canInteract = function()
-                                return (QBX.PlayerData.job.grade.level >= sv.minGrade)
+                                return (QBX.PlayerData.job.name == bv.job and QBX.PlayerData.job.grade.level >= sv.minGrade)
                             end
                         }
                     }
